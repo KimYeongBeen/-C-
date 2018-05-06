@@ -1,8 +1,8 @@
 #pragma once
-class PermanentWorker
+class PermanentWorker :public Employee
 {
 private:
-	char name[100];
+	
 	int salary;
 public:
 	PermanentWorker(const char* name, int money);

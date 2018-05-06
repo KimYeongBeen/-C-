@@ -6,14 +6,14 @@ using namespace std;
 
 EmployeeHandler::EmployeeHandler() :empNum(0)
 	{}
-void EmployeeHandler::AddEmployee(PermanentWorker* emp)
+void EmployeeHandler::AddEmployee(Employee* emp)
 {
 	empList[empNum++] = emp;
 }
 void EmployeeHandler::ShowAllSalaryInfo() const
 {
-	for (int i = 0; i < empNum; i++)
-		empList[i]->ShowSalaryInfo();
+	//for (int i = 0; i < empNum; i++)
+		//empList[i]->ShowSalaryInfo();
 }
 EmployeeHandler::~EmployeeHandler()
 {
@@ -23,7 +23,7 @@ EmployeeHandler::~EmployeeHandler()
 void EmployeeHandler::ShowTotalSalary() const
 {
 	int sum = 0;
-	for (int i = 0; i < empNum; i++)
-		sum += empList[i]->GetPay();
+	//for (int i = 0; i < empNum; i++)
+		//sum += empList[i]->GetPay();
 	cout << "salary sum: " << sum << endl;
 }

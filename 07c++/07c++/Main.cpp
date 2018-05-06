@@ -10,7 +10,7 @@ int main()
 	
 	handler.AddEmployee(new PermanentWorker("JoonKay", 350));
 	handler.AddEmployee(new PermanentWorker("Lee", 250));
-	handler.AddEmployee(new PermanentWorker("JUN", 150));
+	handler.AddEmployee(new PermanentWorker("JUN", 150));//
 
 	handler.ShowAllSalaryInfo();
 	

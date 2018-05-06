@@ -1,13 +1,13 @@
+#include "Employee.h"
 #include "PermanentWorker.h"
+
+
 #include <iostream> 
 using namespace std;
 
 PermanentWorker::PermanentWorker(const char* name, int money)
-	:salary(money)
-{
-	
-	strcpy_s(this->name,strlen(name)+1 ,name);
-}
+	:salary(money) ,Employee(name)
+	{	}
 
 int PermanentWorker::GetPay() const
 {
@@ -16,6 +16,6 @@ int PermanentWorker::GetPay() const
 
 void PermanentWorker::ShowSalaryInfo() 
 {
-	cout << "name : " << name << endl;
+	ShowYourName();
 	cout << "salary : " << GetPay() << endl << endl;
 }

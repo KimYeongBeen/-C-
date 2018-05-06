@@ -1,14 +1,16 @@
 #pragma once
+#include "Employee.h"
 #include "PermanentWorker.h"
+
 
 class EmployeeHandler
 {
 private:
-	PermanentWorker * empList[50];
+	Employee * empList[50];
 	int empNum;
 public:
 	EmployeeHandler();
-	void AddEmployee(PermanentWorker* emp);
+	void AddEmployee(Employee* emp);
 	void ShowAllSalaryInfo() const;
 	void ShowTotalSalary() const;
 	~EmployeeHandler();	
